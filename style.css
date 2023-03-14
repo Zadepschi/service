@@ -1,0 +1,246 @@
+body{
+    background-color: #C1FFD7;
+}
+.header {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 40px;
+}
+
+.item {
+    height: 80vh;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Indie Flower', cursive;
+    margin: 5px;
+    position: relative;
+}
+h4{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: azure;
+    font-size: 0;
+}
+
+.par {
+    position: absolute;
+    top: 120px;
+    left: 10px;
+    background-color: azure;
+    font-size: 0;
+    font-weight: bold;
+}
+
+.price {
+    position: absolute;
+    background-color: azure;
+    bottom: 20px;
+    left: 50px;
+    font-size: 0;
+}
+.selected {
+    flex: 4;
+}
+
+.selected h4 {
+    font-size: 40px;
+    transition: all 1s ease-in;
+}
+
+.selected .par {
+    font-size: 18px;
+    transition: all 1s ease-in;
+}
+
+.selected .price {
+    font-size: 50px;
+    transition: all 1s ease-in;
+}
+
+label {
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+}
+
+.text-input {
+    background-color: #C1FFD7 ;
+    border: none;
+    padding: 18px 20px;
+}
+.btn {
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    background-color: #1EAE98;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 400px;
+}
+.one {
+    background-image: url('1.jpg');
+}
+.two {
+    background-image: url('2.jpg');
+}
+.three {
+    background-image: url('3.jpg');
+}
+.four {
+    background-image: url('4.jpg');
+}
+.five {
+    background-image: url('5.jpg');
+}
+.six {
+    background-image: url('6.jpg');
+}
+.seven {
+    background-image: url('7.jpg');
+}
+
+
+h2  {
+   color: red;
+   font-size: 60px;
+   font-family: 'Cabin', sans-serif;
+}
+
+h6 {
+    font-size: 20px;
+    color: rgb(16, 105, 55);
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+
+
+    .container2 {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-bottom: 60px;
+        }
+        .sale {
+          width: 80px;
+          height: 150px;
+          background-color: rgba(251, 248, 249, 0.82); 
+          border: 3px solid black;
+          margin-top: 50px;
+        }
+        .block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h3 {
+            font-size: 15px;
+            font-family: 'Montserrat', sans-serif; 
+            align-self: center;
+            color: black;
+           
+        }
+        .days, .hours, .minutes, .seconds {
+            font-size: 25px;
+            font-family: 'Montserrat', sans-serif; 
+        }
+        .red {
+            font-size: 60px;
+            border: none;
+            color: red;
+            font-family: 'Staatliches', cursive;
+        }
+ 
+
+@media all and (max-width: 912px) {
+    .container {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+}
+@media all and (max-width: 600px) {
+    .container2 {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+}
+
+
+@media all and (max-width: 540px) {
+    h4 {
+     top: -30px;
+    }
+    .price {
+      bottom: -50px;
+    }
+    .container2 {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+
+@media all and (max-width: 414px) {
+    .container2 {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .sale  {
+        width: 70px;
+          height: 120px;
+    }
+    .days, .hours, .minutes, .seconds {
+        font-size: 20px;
+        }
+        h3 {
+            font-size: 13px; 
+        }
+}
+@media all and (max-width: 360px) {
+    .par {
+        top: 100px;
+    }
+}
+@media all and (max-width: 320px) {
+    .selected .par {
+        font-size: 15px;
+    }
+    .selected h4 {
+        font-size: 30px;
+    }
+    .selected .price {
+        font-size: 40px;
+    }
+    .price {
+        bottom: -20px;
+        left: 10px;
+    }
+    .container2 {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .sale  {
+        width: 60px;
+          height: 100px;
+    }
+    .days, .hours, .minutes, .seconds {
+        font-size: 16px;
+        }
+        h3 {
+            font-size: 10px; 
+        }
+}
+@media all and (max-width: 280px) {
+    .sale  {
+        width: 55px;
+          height: 100px;
+    }
+}
